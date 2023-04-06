@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/formulaire.css">
+    <link rel="stylesheet" href="../jry&boots/css/bootstrap.min.css">
+    <script src="../jry&boots/js/jquery-3.6.2.min.js"></script>
+    <title>Avatar Message</title>
+</head>
+
+<style>
+    input[type=text], input[type=number], input[type=password]{
+        padding: 15px 0;
+        width: 250px;
+    }
+
+    #forme, p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    input[type=text]:hover, input[type=number]:hover, input[type=password]:hover{
+        box-shadow: none;
+        border-color: blueviolet;
+    }
+
+    #logo {
+        border-radius: 25px;
+    }
+
+    .titre-nom {
+        font-size: medium;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .col.text-center.formulaire {
+        width: auto;
+        height: 40px;
+        background-color: rgb(255, 255, 255);
+    }
+
+   
+</style>
+
+<body>
+    <div class="col m-2 justify-content-center titre">
+        <div class="col text-center bg-primary logo">
+            <img id="logo" class="shadow-sm" src="../img/img/messenger.png" alt="logo" width="60px" height="60px">
+        </div>
+        <div class="col titre-nom">
+            <p>Avatar Message</p>
+        </div>
+        <div class="col text-center shadow-sm formulaire">
+            <p>Créer un nouveau compte</p>
+        </div>
+    </div>
+
+
+    <div class="container-fluid" id="collapseExemple">
+        <div class="row my-4">
+            <div class="col-lg offset-lg my-2 justify-center">
+                <form action="../php/formulaire.php" id="forme" method="post">
+                        <div class="form-group">
+                            <label for="name">Nom</label><br>
+                            <input type="text" name="nom" id="nom" class="form-control"><br>
+                        </div class="form-group">
+                        <div class="form-group">
+                            <label for="firstName">Prenom</label><br>
+                            <input type="text" name="prenom" id="prenom" class="form-control"><br>
+                        </div class="form-group">
+                        <div class="form-group">
+                            <label for="number">Numero Téléphonique</label><br>
+                            <input type="number" name="nombre" id="nombre" class="form-control"><br>
+                        </div class="form-group">
+                        <div class="form-group">
+                            <label for="password">Mot De Pass</label><br>
+                            <input type="password" name="code" id="code" class="form-control"><br>
+                        </div>
+
+                        <div class="row form-group">
+                            <table>
+                                <tr>
+                                    <td class="my-2"><label for="sexe">H</td>
+                                    <td><input type="checkbox" name="sexe" id="mascutdn"></label></td>
+                                </tr>
+                                <tr>
+                                    <td class="my-2"><label for="sexe">F</td>
+                                    <td><input type="checkbox" name="sexe" id="feminin"></label></td>
+                                </tr>
+                            </table>
+                        </div>
+                       
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="submit">
+                                    <a href="" target="_blank">
+                                        <button type="submit" name="executer" class="btn btn-block btn-primary" id="executer">
+                                            connexion
+                                        </button>    
+                                    </a>
+                                </label>
+                            </div>
+                        </div>     
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script>
+
+</script>
+</html>

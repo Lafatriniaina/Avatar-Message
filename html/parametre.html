@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../jry&boots/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../jry&boots/css/fontawesome.min.css">
+    <script src="../jry&boots/js/jquery-3.6.2.min.js"></script>
+    <title>Parametre</title>
+</head>
+
+<style>
+    .row.shadow {
+        height: 50px;
+    }
+
+    .container-lg.mx-0 {
+        margin: 0;
+    }
+
+    .btn-light {
+        border: none;
+        background-color: light;
+        font-family: medium;
+    }
+
+    p, a {
+        margin-left: 10%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    p {
+        opacity: 0.6;
+    }
+
+
+</style>
+
+<body>
+    <div class="container-lg mx-0">
+        <div class="row bg-light shadow text-center tete">
+            <div class="col-2 justify-content-center">
+                <a href="../php/accueil.php"> 
+                    <img src="../img/img/retour.png" alt="retour" width="32px" height="40px">
+                </a>
+            </div>
+            <div class="col-4 justify-content-center mx-3 py-2 titre">
+                <h3>Paramètre</h3>
+            </div>
+            <div class="col-1">
+
+            </div>
+        </div>
+
+        <div class="continuer">
+
+            <buttton id="continuer" class="btn btn-light shadow my-2 card" data-toggle="collapse" data-target="#version" aria-expanded="false" aria-controls="version">
+                Version de l'application
+            </buttton>
+
+            <div id="version" class="text-grey-600">
+                <p>
+                    Version Alpha 1.3.55 &middot; &COPY; Edition corporation
+                </p>
+            </div>
+
+            <buttton id="continuer" class="btn btn-light shadow my-2 card" data-toggle="collapse" data-target="#auteur" aria-expanded="false" aria-controls="auteur">
+                Auteur
+            </buttton>
+
+            <div id="auteur">
+                <a href="https://github.com/users/Lafatriniaina/">
+                    A propos de l'auteur
+                </a>
+            </div>
+
+            <buttton id="continuer" class="btn btn-light shadow my-2 card">
+                se deconnecter
+            </buttton>
+
+        </div>
+    </div>
+</body>
+</html>

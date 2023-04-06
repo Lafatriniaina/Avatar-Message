@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../jry&boots/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../jry&boots/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../jry&boots/css/emoji.min.css">
+    <title>Message</title>
+</head>
+
+<style>
+
+#block-message {
+    border: 2px solid white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(224, 213, 213);
+    border-top: 1px solid #e5e5e5;
+}
+
+#mon-message {
+    display: block;
+    border: none;
+    font-size: 16px;
+    padding: 0 10px;
+    background-color: gainsboro;
+}
+
+.btn-primary {
+    display: block;
+    float: right;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+</style>
+
+<body class="body">
+    <div class="container-fluid">
+        <div class="col container-fluid shadow-sm">
+            <div class="row justify-content-between">
+                <div class="col-2">
+                    <a href="../php/accueil.php"> 
+                        <img src="../img/img/retour.png" alt="retour" width="32px" height="40px">
+                    </a>
+                </div>
+                <div class="col-4 mx-3 py-2 titre">
+                    <h3>Messages</h3>
+                </div>
+                <div class="col-1">
+    
+                </div>
+            </div>
+        </div>
+        <div class="col md-8 discussion-list">
+            <ul class="list-unstyled text-white chat-list" id="discussion">
+
+                <!-- contenir toutes les listes de messages -->
+
+            </ul>
+        </div>
+
+
+        <div id="block-message" class="container-fluid">
+            <form class="col-12" id="envoi-message">
+                <div class="row list-group-horizontal d-flex borded-0 text-center card envoieMessage">
+                    <div class="col d-flex message">
+                        <label for="message" class="form-label"></label>
+                        <textarea class="rounded-5 w-100 form-control active my-1" rows="1px" name="messageEnvoye" id="mon-message"></textarea>
+                    </div>
+                    <div class="col-1 d-flex justify-content-center envoye">
+                        <input class="btn btn-primary px-1 submit" type="submit" value="send">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+  
+<script src="../jry&boots/js/jquery-3.6.2.min.js"></script>
+<script src="../scripts/message.js"></script>
+<script src="../jry&boots/js/fontawesome.min.js"></script>
+<script src="../scripts/moment.js"></script>
+<script src="../scripts/moment-with-locales.min.js"></script>
+
+</body>
+
+</html>
